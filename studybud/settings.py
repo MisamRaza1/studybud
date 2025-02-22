@@ -25,7 +25,7 @@ environ.Env.read_env()
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = 'django-insecure-*4nxi0&!u8-&*$ibuo4%)mh6ls72@xd#cp-c%+@++vy-xnzlzo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'studybud.wsgi.application'
 
 import dj_database_url
 DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'))
+    'default': dj_database_url.parse('postgresql://productiondatabase_vcwm_user:3xQ2iAEartToHHIlfKQc20yDGIkvlczx@dpg-cuj234t2ng1s73f48lc0-a.ohio-postgres.render.com/productiondatabase_vcwm')
 }
 
 
